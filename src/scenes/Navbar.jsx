@@ -6,8 +6,8 @@ const Link= ({ page, selectedPage, setSelectedPage }) => {
     const lowerCasePage = page.toLowerCase();
     return (
         <AnchorLink 
-            className={`${selectedPage === lowerCasePage ? "text-red-700" : ""}
-            hover:text-red transition duration-500'}
+            className={`${selectedPage === lowerCasePage ? "text-blue-600" : ""}
+            hover:text-blue-600 transition duration-500'}
             href={'#${lowerCasePage}`}
             onClick={() => setSelectedPage(lowerCasePage)}
             >
@@ -17,9 +17,9 @@ const Link= ({ page, selectedPage, setSelectedPage }) => {
 }
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
-    const [isMenuToggled, setIsMenuToggled] =useState(false);
+    const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-    const navbarBackground = isTopOfPage ? "" : "bg-red-700";
+    const navbarBackground = isTopOfPage ? "" : "bg-blue-700";
 
     return (
         <nav className={`${navbarBackground} z-40 w-full-fixed top-0 py-6`}>
@@ -51,7 +51,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     />
                 </div>
             ) : (
-            <button className="rounded-full bg-red-700 p-2"
+            <button className="rounded-full bg-blue-600 p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)} 
            >
                 <img alt="menu-icon" src="../assets/menu-icon.svg" />
@@ -60,7 +60,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
             {/*MOBILE MENU POPUP*/}
             {!isAboveSmallScreens && isMenuToggled && (
-                <div className="fixed right-0 bottom-0 h-full bg-red-700 w-[300px] ">
+                <div className="fixed right-0 bottom-0 h-full bg-blue-700 w-[300px] ">
                     {/* CLOSE ICON */}
                     <div className="flex justify-end p-12">
                         <button onClick={() =>setIsMenuToggled(!isMenuToggled)}>
