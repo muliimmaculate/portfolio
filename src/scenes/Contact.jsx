@@ -17,7 +17,7 @@ const onSubmit = async (e) => {
 }
 
 return (
-    <section id="contact" className="mt-10">
+    <section id="contact" className="mt-8 flex flex-col items-center">
         {/* HEADINGS */}
         <motion.div
                 className="md:w-1/4"
@@ -54,11 +54,11 @@ return (
     <form
      target="_blank"
      onSubmit={onSubmit}
-     action="https://formsubmit.co/muliimaculate@gmail.com"
+     action="https://formsubmit.com/muliimaculate@gmail.com"
      method="POST"
     
     >
-        <input className="w-full rounded-sm font-semibold placeholder-opaque-black p-3 text-black"
+        <input className="w-11/12  bg-transparent border-blue-400 border-2 rounded-md font-semibold placeholder-opaque-black p-3 text-black"
         type="text"
         placeholder="NAME"
         {...register("name", {
@@ -73,8 +73,8 @@ return (
                 {errors.name.type === "maxLength" && "Max Length is 100 char."}
             </p>
         )}
-      
-      <input className="w-full rounded-sm font-semibold placeholder-opaque-black p-3 mt-5"
+      <br></br>
+      <input className="w-11/12 bg-transparent border-blue-400 border-2 rounded-md font-semibold placeholder-opaque-black p-3 mt-5"
         type="text"
         placeholder="EMAIL"
         {...register("email", {
@@ -89,8 +89,8 @@ return (
                 {errors.name.type === "pattern" && "Invalid email address"}
             </p>
         )}
-      
-      <textarea className="w-full rounded-sm font-semibold placeholder-opaque-black p-3 mt-5"
+      <br></br>
+      <textarea className="w-11/12  bg-transparent border-blue-400 border-2 rounded-md font-semibold placeholder-opaque-black p-3 mt-5"
         type="text"
         placeholder="MESSAGE"
         rows="6"
@@ -107,8 +107,10 @@ return (
                 {errors.name.type === "maxLength" && "Max Lenth is 2000 char."}
             </p>
         )}
-        <button type="submit" className="rounded-sm py-3 px-7 font-semibold bg-blue-700 mt-5 hover:pink-600
-        hover:text-white transition duration-500">
+        <br></br>
+        <button type="submit" className="rounded-sm py-3 px-7 font-semibold bg-blue-700 mt-5 
+        text-white h
+        hover:bg-pink-600 hover:text-white transition duration-500">
             SEND
         </button>
     </form>

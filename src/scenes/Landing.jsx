@@ -2,15 +2,19 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import ProfileImage from '../assets/profile-image.png';
+import ProfileImage from '../Assets/profile-image.png';
 import React from 'react';
 
 
-const Landing = ({ setSelectedPage }) => {
+const Landing = ({setSelectedPage}) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
+
+
   return (
-    <section className="h-full max-h-[640px] mb- xl:mb-24">
-      <div className="flex justify-between items-center">
+    <section id="home" className=" gap-16 py-10">
+      <div className="flex justify-between items-center ">
+
+
 
         {/* CONTENT (Right side) */}
         <div className="z-30 basis-2/5b mt-12 md:mt-32">
@@ -40,6 +44,7 @@ const Landing = ({ setSelectedPage }) => {
             </p>
             </p>
           </motion.div>
+
           <motion.div 
           className="flex mt-5 justify-center md:justify-start"
           initial="hidden"
@@ -51,7 +56,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity:1, x: 0 }
           }}
 
-          >
+           >
             <AnchorLink
   className="bg-gradient-rainblue text-black rounded-sm py-3 px-7 font-semibold
   hover:bg-blue-600 hover:text-white transition duration-500"
@@ -76,13 +81,13 @@ const Landing = ({ setSelectedPage }) => {
           >
             <SocialMediaIcons />
           </motion.div>
-        </div>
+        </div> 
         {/* IMAGE (Left side) */}
-        <div className="lg:mr-8 xl:mr-[135px]">
-          <img src={ProfileImage} alt='' className="w-150 h-120 rounded-full
-          z-10 max-w-[400px] saturate-150" />
+         <div className="mt-10">
+          <img src={ProfileImage} alt='' className="w-150 h-150 rounded-full
+          z- max-w-[600px] saturate-150" />
         </div>
-        
+         
       </div>
     </section>
   );

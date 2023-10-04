@@ -2,6 +2,7 @@ import LineGradient from "../components/LineGradient";
 import  { motion } from "framer-motion";
 
 
+
 const container = {
     hidden: {},
     visible: {
@@ -24,7 +25,13 @@ const Project = ({title}) => {
         <div className={overlayStyles}>
 <p className="text-2xl font-playfair">{title}</p>
         </div>
-        <img src={`../public/assets/${projectTitle}.jpeg`} alt={projectTitle} />
+        <img
+  src={`../assets/${projectTitle}.jpeg`}
+  alt={projectTitle}
+  className="w-70 h-70 object-cover"
+/>
+
+
 
     </motion.div>
     )
@@ -76,8 +83,8 @@ const Projects = () => {
 
             {/* ROW 2 */}
             <Project title="Project 3"></Project>
-            <Project title="Project 4"></Project>
-            <Project title="Project 5"></Project>
+            <Project title=""></Project>
+            <Project title=""></Project>
 
             <div
             className="flex justify-center text-center items-center p-10 bg-pink-600 max-w-[400px]
@@ -85,8 +92,8 @@ const Projects = () => {
             >
                WEB DEVELOPMENT PROJECTS
             </div>
+            <Project title="Project 5"></Project>
             <Project title="Project 6"></Project>
-            <Project title="Project 7"></Project>
 
 
             </motion.div>

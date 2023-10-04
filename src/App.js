@@ -9,6 +9,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 
 
 
+
 function App() {
   const [selectedPage, setselectedPage] = useState('home');
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -26,7 +27,7 @@ function App() {
   
 
   return (
-  <div className="app bg-blue-700">
+  <div className="app bg-deep-blue">
     <Navbar 
     isTopOfPage={isTopOfPage}
     selectedPage={selectedPage} 
@@ -47,7 +48,6 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full">
       <Contact />
       </div>
-  
   </div>
 
 
