@@ -28,7 +28,7 @@ const Project = ({title}) => {
         <img
   src={`../assets/${projectTitle}.jpeg`}
   alt={projectTitle}
-  className="w-70 h-70 object-cover"
+  className="w-full h-full object-cover"
 />
 
 
@@ -78,24 +78,15 @@ const Projects = () => {
             >
                 USER INTERFACE DESIGNS
             </div>
-            <Project title="Project 1"></Project>
-            <Project title="Project 2"></Project>
+            <Project title="Ecommerce website"></Project>
+            <Project title="Easygym website"></Project>
 
             {/* ROW 2 */}
-            <Project title="Project 3"></Project>
-            <Project title=""></Project>
-            <Project title=""></Project>
+            <Project title="Artstudio website"></Project>
+            <Project title="Redesigned Cjs landing page"></Project>
+            <Project title="Pharmacy landing page"></Project>
 
-            <div
-            className="flex justify-center text-center items-center p-10 bg-pink-600 max-w-[400px]
-            max-h-[400px] text-2xl font-playfair font-semibold"
-            >
-               WEB DEVELOPMENT PROJECTS
-            </div>
-            <Project title="Project 5"></Project>
-            <Project title="Project 6"></Project>
-
-
+           
             </motion.div>
              </div>
         </section>
