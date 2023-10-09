@@ -54,11 +54,11 @@ return (
     <form
      target="_blank"
      onSubmit={onSubmit}
-     action="https://formsubmit.com/muliimaculate@gmail.com"
+     action="https://formsubmit.co/ea2c9ccfb10bece8bdd82ceb939eba38"
      method="POST"
     
     >
-        <input className="w-11/12  bg-transparent border-blue-400 border-2 rounded-md font-semibold placeholder-opaque-black p-3 text-black"
+        <input className="w-11/12 text-white bg-transparent border-blue-400 border-2 rounded-md font-semibold placeholder-opaque-black p-3 text-black"
         type="text"
         placeholder="NAME"
         {...register("name", {
@@ -68,7 +68,7 @@ return (
 
         />
         {errors.name && (
-            <p className="text-red-600 mt-1">
+            <p className="text-pink-600 mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max Length is 100 char."}
             </p>
@@ -79,14 +79,14 @@ return (
         placeholder="EMAIL"
         {...register("email", {
             required:true,
-            pattern: /^[A-Z0-9._%+-]+@[A-Z]{2,}$/i,
+            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.0-]+\.[A-Z]{2,}$/i,
         })}
 
         />
          {errors.email && (
-            <p className="text-red-600 mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "pattern" && "Invalid email address"}
+            <p className="text-pink-600 mt-1">
+                {errors.email.type === "required" && "This field is required."}
+                {errors.email.type === "pattern" && "Invalid email address"}
             </p>
         )}
       <br></br>
@@ -95,7 +95,7 @@ return (
         placeholder="MESSAGE"
         rows="6"
         cols="60"
-        {...register("email", {
+        {...register("message", {
             required:true,
             maxLength:2000
         })}
@@ -103,13 +103,13 @@ return (
         />
          {errors.message && (
             <p className="text-red-600 mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max Lenth is 2000 char."}
+                {errors.message.type === "required" && "This field is required."}
+                {errors.message.type === "maxLength" && "Max Lenth is 2000 char."}
             </p>
         )}
         <br></br>
         <button type="submit" className="rounded-sm py-3 px-7 font-semibold bg-blue-700 mt-5 
-        text-white h
+        text-white 
         hover:bg-pink-600 hover:text-white transition duration-500">
             SEND
         </button>

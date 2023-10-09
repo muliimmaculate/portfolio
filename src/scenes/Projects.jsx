@@ -87,10 +87,12 @@ const Projects = () => {
            
 
             {/* ROW 2 */}
-           
-            <Project title="Redesigned Cjs landing page" link="https://www.behance.net/gallery/181852445/Cjs-Redesigned-landing-page?"></Project>
-            <Project title="Pharmacy landing page"></Project>
-
+            <Project title="Pharmacy landing page" 
+            link="https://www.behance.net/gallery/181854869/Pharmacy-Landing-Page">
+            </Project>
+            <Project title="Redesigned Cjs landing page" 
+            link="https://www.behance.net/gallery/181852445/Cjs-Redesigned-landing-page?">
+            </Project>
            
             </motion.div>
              </div>

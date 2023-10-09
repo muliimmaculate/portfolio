@@ -83,8 +83,8 @@ const Landing = ({setSelectedPage}) => {
           </motion.div>
         </div> 
         {/* IMAGE (Left side) */}
-         <div className="mt-8">
-          <img src={ProfileImage} alt='' className="w-150 h-150 rounded-full
+         <div className="mt-2">
+          <img src={ProfileImage} alt='' className="w-130 h-130 rounded-full
           z- max-w-[600px] saturate-150" />
         </div>
          
