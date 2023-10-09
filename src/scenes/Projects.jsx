@@ -15,27 +15,27 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 }
 }
 
-const Project = ({title}) => {
+const Project = ({title, link }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition
     duration-500 bg-pink-400 z-30 flex flex-col justify-center items-center text-center p-16 text-blue-700`;
     const projectTitle =title.split(" ").join("-") .toLowerCase();
 
     return (
-    <motion.div variants={projectVariant} className="relative">
-        <div className={overlayStyles}>
-<p className="text-2xl font-playfair">{title}</p>
-        </div>
-        <img
-  src={`../assets/${projectTitle}.jpeg`}
-  alt={projectTitle}
-  className="w-full h-full object-cover"
-/>
-
-
-
-    </motion.div>
-    )
-}
+        <motion.a href={link} target="_blank" rel="noopener noreferrer">
+          <motion.div variants={projectVariant} className="relative">
+            <div className={overlayStyles}>
+              <p className="text-2xl font-playfair">{title}</p>
+            </div>
+            <img
+              src={`../assets/${projectTitle}.jpeg`}
+              alt={projectTitle}
+              className="w-70 h-75 object-cover"
+            />
+          </motion.div>
+        </motion.a>
+      );
+    };
+    
 const Projects = () => {
     
     return (
@@ -54,12 +54,13 @@ const Projects = () => {
         >
             <div>
             <p className="font-playfair font-semibold text-4xl mb-5">
-                <span className="text-blue-600">PRO</span>JECTS
+             MY<span className="text-blue-600">PROJECTS</span>
             </p>
 
             </div>
             <LineGradient width="w-1/4" />
                 </motion.div>
+
                 {/* PROJECTS */}
              <div className="flex justify-center">
              <motion.div
@@ -78,12 +79,16 @@ const Projects = () => {
             >
                 USER INTERFACE DESIGNS
             </div>
+            <Project
+            title="Artstudio website"
+            link="https://www.behance.net/gallery/179795943/ArtStudio-website-UIUX-CASE-STUDY"
+          ></Project>
             <Project title="Ecommerce website"></Project>
-            <Project title="Easygym website"></Project>
+           
 
             {/* ROW 2 */}
-            <Project title="Artstudio website"></Project>
-            <Project title="Redesigned Cjs landing page"></Project>
+           
+            <Project title="Redesigned Cjs landing page" link="https://www.behance.net/gallery/181852445/Cjs-Redesigned-landing-page?"></Project>
             <Project title="Pharmacy landing page"></Project>
 
            
