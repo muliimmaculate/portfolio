@@ -10,7 +10,6 @@ import useMediaQuery from "./hooks/useMediaQuery";
 
 
 
-
 function App() {
   const [selectedPage, setselectedPage] = useState('home');
   const [isTopOfPage, setIsTopOfPage] = useState(true);
