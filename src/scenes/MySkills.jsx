@@ -57,16 +57,17 @@ const MySkills = () => {
                 <div className="relative h-32">
                     <div className="z-10">
                         <p className="font-playfair font-semibold text-5xl text-blue-600">01</p>
-                        <p className="font-playfair font-semibold text-2xl">WEB DEVELOPMENT LANGUAGES</p>
+                        <p className="font-playfair font-semibold text-2xl">USER INTERFACE (UI)</p>
 
                     </div>
                     <div></div>
                 </div>
                 <p className="mt-5">
-                    HTML <br></br>
-                    CSS <br></br>
-                    Javascript (and libraries/frameworks like React, Angular, vite) <br></br>
-                    Backend languages like Python,PHP(if applicable)
+                *Proficient in Adobe XD, Sketch, and Figma. <br></br>
+*Creating visually appealing and user-friendly interfaces. <br></br>
+*Strong knowledge of color theory and typography. <br></br>
+*Designing icons and graphics for web and mobile. <br></br>
+*Consistently meeting brand guidelines and design standards.
                 </p>
                 </motion.div>
                 <motion.div
@@ -85,15 +86,17 @@ const MySkills = () => {
                 <div className="relative h-32">
                     <div className="z-10">
                         <p className="font-playfair font-semibold text-5xl text-pink-600">02</p>
-                        <p className="font-playfair font-semibold text-2xl">UI/UX DESIGN</p>
+                        <p className="font-playfair font-semibold text-2xl">USER EXPERIENCE DESIGN (UX)</p>
 
                     </div>
                     <div></div>
                 </div>
                 <p className="mt-5">
-                    User interface (UI) <br></br>
-                    Use experience (UX) <br></br>
-                    Wireframing and Prototyping
+                *Conducting user research through interviews and surveys. <br></br>
+*Creating wireframes and prototypes to visualize ideas. <br></br>
+*Improving user experiences through navigation design. <br></br>
+*Enhancing content strategy for better user engagement. <br></br>
+*Usability testing and iterative design for optimal user satisfaction. <br></br>
                 </p>
                 </motion.div>
                 <motion.div
@@ -112,14 +115,17 @@ const MySkills = () => {
                 <div className="relative h-32">
                     <div className="z-10">
                         <p className="font-playfair font-semibold text-5xl">03</p>
-                        <p className="font-playfair font-semibold text-2xl">FRONTEND FRAMEWORKS</p>
+                        <p className="font-playfair font-semibold text-2xl">INTERACTION DESIGN</p>
 
                     </div>
                     <div></div>
                 </div>
                 <p className="mt-5">
-                    Bootstrap,Foundation or other CSS frameworks <br></br>
-                    Javascript frameworks and libraries
+                *Designing interactive elements like buttons and forms. <br></br>
+*Incorporating animations and microinteractions. <br></br>
+*Ensuring responsive design for various devices. <br></br>
+*Enhancing user engagement and user flow. <br></br>
+*Focusing on intuitive and engaging user interactions.
                 </p>
                 </motion.div>
                         </div>
