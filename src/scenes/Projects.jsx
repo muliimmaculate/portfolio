@@ -83,7 +83,10 @@ const Projects = () => {
             title="Artstudio website"
             link="https://www.behance.net/gallery/179795943/ArtStudio-website-UIUX-CASE-STUDY"
           ></Project>
-            <Project title="Ecommerce website"></Project>
+            <Project title="Ecommerce website"
+            link="https://www.behance.net/gallery/182988579/ECOMMERCE-WEBSITE-CASE-STUDY?"
+          >
+            </Project>
            
 
             {/* ROW 2 */}
